@@ -50,8 +50,6 @@ func (uc UserController) GetAll() ([]models.User, error) {
 
 	query, err := db.DB.Query("SELECT id, firstname, lastname, email, active FROM users ORDER BY id")
 
-	defer db.DB.Close()
-
 	if err != nil {
 		log.Println(err)
 		return nil, err
