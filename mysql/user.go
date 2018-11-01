@@ -2,8 +2,8 @@ package mysql
 
 import (
 	"log"
-	"users/models"
-	"users/mysql/db"
+	"github.com/golang-modules/users/models"
+	"github.com/golang-modules/users/mysql/db"
 
 	"golang.org/x/crypto/bcrypt"
 )
