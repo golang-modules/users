@@ -67,19 +67,6 @@ func main() {
 
 ```
 
-### List all users
-```go
-
-func main() {
-
-    uc := mysql.New()
-	res, err := uc.GetAll()
-
-	log.Println(res)
-	log.Println(err)
-}
-
-```
 
 ### List users
 ```go
